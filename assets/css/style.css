@@ -150,6 +150,7 @@ body {
 .sidebar .sidebar-subbed>.sidebar-item{
     padding-left: 35px;
 }
+
 .sidebar .sidebar-subbed .sidebar-subbed>.sidebar-item{
     padding-left: 60px;
 }
@@ -171,7 +172,6 @@ body {
 .box-container{
     padding: 10px;
     width: 100%;
-
 }
 
 .box{
@@ -183,29 +183,56 @@ body {
     color: #154470;
 }
 
+.box-minSize-300 {
+    min-height: 300px;
+}
+.box-minSize-400 {
+    min-height: 400px;
+}
+
 .box-header{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 4px solid transparent;
+    box-shadow: 0px 5px 3px -5px rgba(0,0,0,0.25);
+}
+.box-header img{
+    opacity: 0.75;
+}
+
+.box-header.crop-img{
     width:100%;
     max-height: 300px;
     overflow: hidden;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
     line-height:300px;/* set the baseline at 100px from top*/
-    border: 4px solid transparent;
 }
 
-.box-header img{
+.box-header.crop-img img {
     margin: -50% auto;/* virtualy height needed turn don to zero */
     width: 100%;/* height will follow within image ratio */
     height:auto;/* to overrride attribute height set in tag */
     vertical-align:middle;/* finalise vertical centering on baseline*/
 }
 
-.box-body{
-    padding: 20px;
+.box-header.full-img{
+    width: 100%;
+    height: 100%;
+}
+.box-header.full-img img{
+    width: 100%;
+    height: 100%;
 }
 
-.box-title{
+.box-body{
+    padding: 10px;
+}
+
+.box-title, .box-title-big{
     font-size:24px;
+    margin-bottom: 20px;
+}
+.box-title-medium{
+    font-size:18px;
     margin-bottom: 20px;
 }
 
@@ -310,6 +337,9 @@ body {
 
 .dp-none{
     display: none !important;
+}
+.box-container-size-2{
+    width: calc(2 * (100% / 12));
 }
 .box-container-size-3{
     width: calc(3 * (100% / 12));
