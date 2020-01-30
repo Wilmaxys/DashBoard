@@ -10,10 +10,7 @@
     <div class="header">
         <div class="header-left">
             <div class="header-title">
-                Have a break
-            </div>
-            <div id="header-grow-button" class="header-grow-button">
-                <i class="fas fa-bars"></i>
+                Portail WEB
             </div>
         </div>
         <div class="header-menu">
@@ -21,13 +18,47 @@
                 <a  href="index.html">Portail WEB</a>
             </div>
             <div class="header-menu-content">
-                Terry Crews
+                <span class="header-menu-profilName">Terry Crews</span> 
                 <img class="header-menu-profilPicture" src="assets/img/Terry.png" alt="">
+                <div id="header-menu-profil" class="box dp-none">
+                    <div class="box-body">
+                        <div class="box-title-medium">
+                            Informations
+                        </div>
+                        <div class="box-content">
+                            blabla
+                        </div>
+                    </div>  
+                    <div class="box-body">
+                        <div class="box-title-medium">
+                            Rôles
+                        </div>
+                        <div class="box-content">
+                            <ul class="tags">
+                                <li>Utilisateur</li>
+                                <li>Valideur</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-body text-align-right">
+                        <a href="#" class="button">Profil</a>
+                        <a href="#" class="button">Se déconnecter</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="main">
-        <div class="sidebar dp-none">
+        <div class="sidebar sidebar-invisible dp-none">
+            <div class="sidebar-row sidebar-row-nb2">
+                <div id="sidebar-grow-button" class="sidebar-item">
+                    <span class="sidebar-item-icon"><i class="fas fa-bars"></i></span>
+                    <span class="sidebar-item-text">Réduire</span>
+                </div>
+                <div id="sidebar-pin-button" class="sidebar-item active">
+                    <span id="sidebar-pin-button" class="sidebar-item-text"><i class="fas fa-thumbtack"></i></span>
+                </div>
+            </div>
             <div class="sidebar-row">
                 <a href="#" id="menu-home" class="sidebar-item item-grow">
                     <span class="sidebar-item-icon"><i class="fas fa-home"></i></span>
@@ -66,7 +97,7 @@
             </div>
             <div class="sidebar-row">
                 <a href="index.html" id="menu-user" class="sidebar-item">
-                    <span class="sidebar-item-icon"><i class="fas fa-list-ul"></i></span>
+                    <span class="sidebar-item-icon"><i class="fas fa-users"></i></span>
                     <span class="sidebar-item-text">Utilisateurs</span>
                 </a>
             </div>
@@ -110,198 +141,264 @@
             </div>
         </div>
         <div class="content">
-            <!-- <div class="box-container">
+            <div class="box-row box-row-highlight">
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/set.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                Suivi études
+                            </div>
+                            <div class="box-content">
+                                Application de suivi des demandes pour le service Etudes.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/hbk.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                Have a break
+                            </div>
+                            <div class="box-content">
+                                Gestion des demandes de congés.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/default.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                Annuaire
+                            </div>
+                            <div class="box-content">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/dri.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                DRI
+                            </div>
+                            <div class="box-content">
+                                Retour de matériel informatique.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/paie.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                Paie
+                            </div>
+                            <div class="box-content">
+                                Demande d'arrêt de travail
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/rm.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                Role manager
+                            </div>
+                            <div class="box-content">
+                                Gestions des accès aux applications.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="box-row box-row-highlight">
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/tbs.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                Time booking system
+                            </div>
+                            <div class="box-content">
+                                Saisie des heures de travail
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/itrv.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                Intervention travaux
+                            </div>
+                            <div class="box-content">
+                                Gestion des interventions travaux.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/vd.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                VD
+                            </div>
+                            <div class="box-content">
+                                Gestion du travail dominical.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/wsap.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                SAP
+                            </div>
+                            <div class="box-content">
+                                Gestion de l'accès individuel à SAP.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/chk.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                Checklist
+                            </div>
+                            <div class="box-content">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" class="box-container box-container-size-2">
+                    <div class="box">
+                        <div class="box-header icon-img">
+                            <img src="assets/img/indac.icon.png" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title-medium">
+                                Indicateurs achats
+                            </div>
+                            <div class="box-content">
+                                Indicateurs des résultats des acheteurs.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div> -->
+            <div class="box-container">
                 <div class="box">
                     <div class="box-body">
                         <div class="box-title">
-                            testRapide
+                            Test rapide
                         </div>
                         <div class="box-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste non blanditiis accusantium qui temporibus molestias nam est pariatur, magni maxime voluptatum voluptate ducimus, optio vel natus! Blanditiis, magnam quibusdam!
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/set.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            Suivi études
-                        </div>
-                        <div class="box-content">
-                            Application de suivi des demandes pour le service Etudes.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/hbk.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            Have a break
-                        </div>
-                        <div class="box-content">
-                            Gestion des demandes de congés.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/default.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            Annuaire
-                        </div>
-                        <div class="box-content">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/dri.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            DRI
-                        </div>
-                        <div class="box-content">
-                            Retour de matériel informatique.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/paie.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            Paie
-                        </div>
-                        <div class="box-content">
-                            Demande d'arrêt de travail
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/rm.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            Role manager
-                        </div>
-                        <div class="box-content">
-                            Gestions des accès aux applications.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/tbs.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            Time booking system
-                        </div>
-                        <div class="box-content">
-                            Saisie des heures de travail
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/itrv.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            Intervention travaux
-                        </div>
-                        <div class="box-content">
-                            Gestion des interventions travaux.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/vd.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            VD
-                        </div>
-                        <div class="box-content">
-                            Gestion du travail dominical.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/wsap.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            SAP
-                        </div>
-                        <div class="box-content">
-                            Gestion de l'accès individuel à SAP.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/chk.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            Checklist
-                        </div>
-                        <div class="box-content">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-container box-container-size-2">
-                <div class="box box-minSize-300">
-                    <div class="box-header icon-img">
-                        <img src="assets/img/indac.icon.png" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title-medium">
-                            Indicateurs achats
-                        </div>
-                        <div class="box-content">
-                            Indicateurs des résultats des acheteurs.
+                            <div class="tabs-container dp-none">
+                                <div class="tabs-header">
+                                    <div class="tab-title" for="test1">
+                                        Test 1
+                                    </div>
+                                    <div class="tab-title" for="test2">
+                                        Test 2
+                                    </div>
+                                    <div class="tab-title" for="test3">
+                                        Test 3
+                                    </div>
+                                </div>
+                                <div class="tabs-body">
+                                    <div class="tab-content" id="test1">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                    </div>
+                                    <div class="tab-content" id="test2">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                    </div>
+                                    <div class="tab-content" id="test3">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="box-container">
-                <div class="box box-minSize-300">
+                <div class="box">
+                    <div class="box-body">
+                        <div class="box-title">
+                            Test rapide
+                        </div>
+                        <div class="box-content">
+                            <div class="tabs-container dp-none">
+                                <div class="tabs-header">
+                                    <div class="tab-title" for="input">
+                                        Input
+                                    </div>
+                                    <div class="tab-title" for="test2">
+                                        Test 2
+                                    </div>
+                                    <div class="tab-title" for="test3">
+                                        Test 3
+                                    </div>
+                                </div>
+                                <div class="tabs-body">
+                                    <div class="tab-content" id="input">
+                                        
+                                    </div>
+                                    <div class="tab-content" id="test2">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                    </div>
+                                    <div class="tab-content" id="test3">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
                     <div class="box-header crop-img">
                         <img src="assets/img/imgTest.jpg" alt="">
                     </div>
