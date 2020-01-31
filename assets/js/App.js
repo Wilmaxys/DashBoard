@@ -1,5 +1,19 @@
 $( document ).ready(function () {
 
+    $('.header-menu-profil-theme').click(function (){
+        $('body').toggleClass('light dark');
+    })
+
+    $('.input-textBox').focusin(function () {
+        if (!$(this).val()) {
+            $(this).parent('.input-container').toggleClass('active');
+        }
+    }).focusout(function () {
+        if (!$(this).val()) {
+            $(this).parent('.input-container').toggleClass('active');
+        }
+    })
+
     // Mises en places de la sidebar
 
     $('#sidebar-grow-button').click(function () {

@@ -5,8 +5,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <script src="assets/js/preRender.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="assets/js/all.min.js"></script>
+    <script defer src="assets/js/App.js"></script>
 </head>
-<body>
+<body class="dark">
     <div class="header">
         <div class="header-left">
             <div class="header-title">
@@ -40,9 +44,16 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="box-body text-align-right">
-                        <a href="#" class="button">Profil</a>
-                        <a href="#" class="button">Se déconnecter</a>
+                    <div class="box-body">
+                        <div class="header-menu-profil-param">
+                            <div class="header-menu-profil-theme">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <div class="header-menu-profil-button">
+                                <a href="#" class="button">Profil</a>
+                                <a href="#" class="button">Se déconnecter</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,8 +152,8 @@
             </div>
         </div>
         <div class="content">
-            <div class="box-row box-row-highlight">
-                <a href="index.html" class="box-container box-container-size-2">
+            <div class="container-row container-row-highlight">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/set.icon.png" alt="">
@@ -157,7 +168,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="index.html" class="box-container box-container-size-2">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/hbk.icon.png" alt="">
@@ -172,7 +183,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="index.html" class="box-container box-container-size-2">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/default.icon.png" alt="">
@@ -186,7 +197,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="index.html" class="box-container box-container-size-2">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/dri.icon.png" alt="">
@@ -201,7 +212,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="index.html" class="box-container box-container-size-2">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/paie.icon.png" alt="">
@@ -216,7 +227,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="index.html" class="box-container box-container-size-2">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/rm.icon.png" alt="">
@@ -232,8 +243,8 @@
                     </div>
                 </a>
             </div>
-            <!-- <div class="box-row box-row-highlight">
-                <a href="index.html" class="box-container box-container-size-2">
+            <!-- <div class="container-row container-row-highlight">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/tbs.icon.png" alt="">
@@ -248,7 +259,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="index.html" class="box-container box-container-size-2">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/itrv.icon.png" alt="">
@@ -263,7 +274,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="index.html" class="box-container box-container-size-2">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/vd.icon.png" alt="">
@@ -278,7 +289,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="index.html" class="box-container box-container-size-2">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/wsap.icon.png" alt="">
@@ -293,7 +304,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="index.html" class="box-container box-container-size-2">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/chk.icon.png" alt="">
@@ -307,7 +318,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="index.html" class="box-container box-container-size-2">
+                <a href="index.html" class="box-container container-2">
                     <div class="box">
                         <div class="box-header icon-img">
                             <img src="assets/img/indac.icon.png" alt="">
@@ -327,19 +338,19 @@
                 <div class="box">
                     <div class="box-body">
                         <div class="box-title">
-                            Test rapide
+                            Système de tabulation
                         </div>
                         <div class="box-content">
                             <div class="tabs-container dp-none">
                                 <div class="tabs-header">
                                     <div class="tab-title" for="test1">
-                                        Test 1
+                                        Tab 1
                                     </div>
                                     <div class="tab-title" for="test2">
-                                        Test 2
+                                        Tab 2
                                     </div>
                                     <div class="tab-title" for="test3">
-                                        Test 3
+                                        Tab 3
                                     </div>
                                 </div>
                                 <div class="tabs-body">
@@ -365,7 +376,7 @@
                 <div class="box">
                     <div class="box-body">
                         <div class="box-title">
-                            Test rapide
+                            Outils
                         </div>
                         <div class="box-content">
                             <div class="tabs-container dp-none">
@@ -373,23 +384,106 @@
                                     <div class="tab-title" for="input">
                                         Input
                                     </div>
-                                    <div class="tab-title" for="test2">
-                                        Test 2
-                                    </div>
-                                    <div class="tab-title" for="test3">
-                                        Test 3
+                                    <div class="tab-title" for="table">
+                                        Table
                                     </div>
                                 </div>
                                 <div class="tabs-body">
                                     <div class="tab-content" id="input">
-                                        
+                                        <div class="input-container">
+                                            <label for="testInput" class="input-textBox-label" >Label</label>
+                                            <input id="testInput" class="input-textBox" type="text">
+                                        </div>
+                                        <div class="input-container error">
+                                            <label for="testInput" class="input-textBox-label" >Label</label>
+                                            <input id="testInput" class="input-textBox" type="text">
+                                            <span class="informationMessage">Ceci est un message de test</span>
+                                        </div>
+                                        <div class="input-container success">
+                                            <label for="testInput" class="input-textBox-label" >Label</label>
+                                            <input id="testInput" class="input-textBox" type="text">
+                                            <span class="informationMessage">Ceci est un message de test</span>
+                                        </div>
+                                        <div class="input-container">
+                                            <label for="testInput" class="input-date-label" >Label</label>
+                                            <input id="testInput" class="input-date" type="date">
+                                        </div>
+                                    
+                                        <div class="input-container">
+                                            <label class="input-select-label" for="pet-select">Choose a pet</label>
+                                            <select class="input-select" id="pet-select">
+                                                <option value="dog">Dog</option>
+                                                <option value="cat">Cat</option>
+                                                <option value="hamster">Hamster</option>
+                                                <option value="parrot">Parrot</option>
+                                                <option value="spider">Spider</option>
+                                                <option value="goldfish">Goldfish</option>
+                                            </select>
+                                        </div>
+                                        <div class="box-body">
+                                            <input class="input-button" type="button" value="test">
+                                            <input class="input-button" type="button" value="test">
+                                            <input class="input-button" type="button" value="test">
+                                            <input class="input-button" type="button" value="test">
+                                            <input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter">
+                                        </div>                                
                                     </div>
-                                    <div class="tab-content" id="test2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
-                                    </div>
-                                    <div class="tab-content" id="test3">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                    <div class="tab-content" id="table">
+                                        <table class="table-template">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>ID</th>
+                                                    <th>Name</th>
+                                                    <th>Status</th>
+                                                    <th class="text-align-right">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </td class="text-align-right">
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </td class="text-align-right">
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </td class="text-align-right">
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </td class="text-align-right">
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </tdclass="text-align-right">
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -397,17 +491,34 @@
                     </div>
                 </div>
             </div>
-            <div class="box-container">
-                <div class="box">
-                    <div class="box-header crop-img">
-                        <img src="assets/img/imgTest.jpg" alt="">
-                    </div>
-                    <div class="box-body">
-                        <div class="box-title">
-                            testRapide
+            <div class="container-row">
+                <div class="box-container container-6">
+                    <div class="box">
+                        <div class="box-header crop-img">
+                            <img src="assets/img/imgTest.jpg" alt="">
                         </div>
-                        <div class="box-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste non blanditiis accusantium qui temporibus molestias nam est pariatur, magni maxime voluptatum voluptate ducimus, optio vel natus! Blanditiis, magnam quibusdam!
+                        <div class="box-body">
+                            <div class="box-title">
+                                testRapide
+                            </div>
+                            <div class="box-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste non blanditiis accusantium qui temporibus molestias nam est pariatur, magni maxime voluptatum voluptate ducimus, optio vel natus! Blanditiis, magnam quibusdam!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-container container-6">
+                    <div class="box">
+                        <div class="box-header crop-img">
+                            <img src="assets/img/imgTest.jpg" alt="">
+                        </div>
+                        <div class="box-body">
+                            <div class="box-title">
+                                testRapide
+                            </div>
+                            <div class="box-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste non blanditiis accusantium qui temporibus molestias nam est pariatur, magni maxime voluptatum voluptate ducimus, optio vel natus! Blanditiis, magnam quibusdam!
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -417,8 +528,12 @@
     <div class="footer">
         <p>Cette application à été développé par le Pôle WEB - Univers NOZ © 2020. Pour nous contacter: <a  href="index.html">Envoyer un email</a>.</p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/App.js"></script>
+    <div class="modal-container">
+        <div class="modal">
+            <div class="box">
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
