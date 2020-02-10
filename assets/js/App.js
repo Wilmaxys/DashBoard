@@ -1,6 +1,14 @@
 $( document ).ready(function () {
 
-    $('.header-menu-profil-theme').click(function (){
+    $('#closeModal').click(function () {
+        $(this).parents('.modal-container').toggleClass("dp-none");
+    });
+
+    $('#OpenModal').click(function () {
+        $('.modal-container').toggleClass("dp-none");
+    });
+
+    $('.header-profil-owerview-theme').click(function (){
         $('body').toggleClass('light dark');
     })
 
@@ -80,17 +88,17 @@ $( document ).ready(function () {
         $(this).find('.tab-title').first().toggleClass('active');
     });
 
-    $('.header-menu-content').click(function (event) {
-        if (!$(event.target).parents('#header-menu-profil').length > 0) {
-            $('#header-menu-profil').toggleClass('dp-none');
+    $('.header-profil').click(function (event) {
+        if (!$(event.target).parents('#header-profil-owerview').length > 0) {
+            $('#header-profil-owerview').toggleClass('dp-none');
         }
     });
 
     $('body').click(function (event) 
     {
-        if(!$(event.target).closest('#header-menu-profil').length && !$(event.target).is('#header-menu-profil') && !($(event.target).parents('.header-menu-content').length > 0)) {
-            if (!$("#header-menu-profil").hasClass('dp-none')) {
-                $("#header-menu-profil").toggleClass('dp-none');
+        if(!$(event.target).closest('#header-profil-owerview').length && !$(event.target).is('#header-profil-owerview') && !($(event.target).parents('.header-profil').length > 0)) {
+            if (!$("#header-profil-owerview").hasClass('dp-none')) {
+                $("#header-profil-owerview").toggleClass('dp-none');
             }
         }     
     });
@@ -99,6 +107,7 @@ $( document ).ready(function () {
 
     $('#sidebar-pin-button').click( function() {
         $(this).toggleClass('active');
+        $('.content').toggleClass('content-pin');
 
         if (!$(this).hasClass('active')) {
             localStorage.setItem('pinDesactivated', "true");
@@ -108,11 +117,11 @@ $( document ).ready(function () {
         }
     });
 
-    if (localStorage.getItem('pinDesactivated') != "true") {
-        $('.sidebar').removeClass('sidebar-invisible');
+    if (localStorage.getItem('pinDesactivated') == "true") {
+        $('.sidebar').addClass('sidebar-invisible');
     }
     else{
-        $('#sidebar-pin-button').removeClass('active');
+        $('#sidebar-pin-button').addClass('active');
     }
 
     $('.sidebar').hover(function () {

@@ -6,25 +6,25 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
     <script src="assets/js/preRender.js"></script>
-    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="assets/js/jquery-3.4.1.min.js"></script>
     <script defer src="assets/js/all.min.js"></script>
     <script defer src="assets/js/App.js"></script>
 </head>
-<body class="dark">
+<body class="light">
     <div class="header">
         <div class="header-left">
             <div class="header-title">
                 Portail WEB
             </div>
         </div>
-        <div class="header-menu">
-            <div class="header-menu-portal">
+        <div class="header-right">
+            <div class="header-portal">
                 <a  href="index.html">Portail WEB</a>
             </div>
-            <div class="header-menu-content">
-                <span class="header-menu-profilName">Terry Crews</span> 
-                <img class="header-menu-profilPicture" src="assets/img/Terry.png" alt="">
-                <div id="header-menu-profil" class="box dp-none">
+            <div class="header-profil">
+                <span class="header-profil-userName">Terry Crews</span> 
+                <img class="header-profil-avatar" src="assets/img/Terry.png" alt="">
+                <div class="box dp-none" id="header-profil-owerview">
                     <div class="box-body">
                         <div class="box-title-medium">
                             Informations
@@ -45,11 +45,11 @@
                         </div>
                     </div>
                     <div class="box-body">
-                        <div class="header-menu-profil-param">
-                            <div class="header-menu-profil-theme">
+                        <div class="header-profil-owerview-param">
+                            <div class="header-profil-owerview-theme">
                                 <i class="fas fa-moon"></i>
                             </div>
-                            <div class="header-menu-profil-button">
+                            <div class="header-profil-owerview-button">
                                 <a href="#" class="button">Profil</a>
                                 <a href="#" class="button">Se déconnecter</a>
                             </div>
@@ -60,18 +60,18 @@
         </div>
     </div>
     <div class="main">
-        <div class="sidebar sidebar-invisible dp-none">
+        <div class="sidebar dp-none">
             <div class="sidebar-row sidebar-row-nb2">
-                <div id="sidebar-grow-button" class="sidebar-item">
+                <div class="sidebar-item" id="sidebar-grow-button">
                     <span class="sidebar-item-icon"><i class="fas fa-bars"></i></span>
                     <span class="sidebar-item-text">Réduire</span>
                 </div>
-                <div id="sidebar-pin-button" class="sidebar-item active">
-                    <span id="sidebar-pin-button" class="sidebar-item-text"><i class="fas fa-thumbtack"></i></span>
+                <div class="sidebar-item" id="sidebar-pin-button">
+                    <span class="sidebar-item-text" id="sidebar-pin-button"><i class="fas fa-thumbtack"></i></span>
                 </div>
             </div>
             <div class="sidebar-row">
-                <a href="#" id="menu-home" class="sidebar-item item-grow">
+                <a href="#" class="sidebar-item item-grow" id="menu-home">
                     <span class="sidebar-item-icon"><i class="fas fa-home"></i></span>
                     <span class="sidebar-item-text">Accueil</span>
                     <span class="sidebar-item-expend"><i class="fas fa-angle-right"></i></span>
@@ -95,19 +95,11 @@
                             <span class="sidebar-item-icon"><i class="fas fa-church"></i></span>
                             <span class="sidebar-item-text">Eglise</span>
                         </a>
-                        <a href="index.html" id="menu-cloud" class="sidebar-item">
-                            <span class="sidebar-item-icon"><i class="fas fa-cloud"></i></span>
-                            <span class="sidebar-item-text">Cloud</span>
-                        </a>
                     </div>
-                    <a href="index.html" id="menu-bug" class="sidebar-item">
-                        <span class="sidebar-item-icon"><i class="fas fa-bug "></i></span>
-                        <span class="sidebar-item-text">Bug</span>
-                    </a>
                 </div>
             </div>
             <div class="sidebar-row">
-                <a href="index.html" id="menu-user" class="sidebar-item">
+                <a href="index.html" class="sidebar-item" id="menu-user">
                     <span class="sidebar-item-icon"><i class="fas fa-users"></i></span>
                     <span class="sidebar-item-text">Utilisateurs</span>
                 </a>
@@ -116,38 +108,6 @@
                 <a href="index.html" id="menu-geo" class="sidebar-item">
                     <span class="sidebar-item-icon"><i class="fas fa-globe"></i></span>
                     <span class="sidebar-item-text">Localisation</span>
-                </a>
-            </div>
-            <div class="sidebar-row">
-                <a href="#" id="menu-spider" class="sidebar-item item-grow">
-                    <span class="sidebar-item-icon"><i class="fas fa-spider"></i></span>
-                    <span class="sidebar-item-text">Spider</span>
-                    <span class="sidebar-item-expend"><i class="fas fa-angle-right"></i></span>
-                </a>
-                <div class="sidebar-subbed dp-none">
-                    <a href="#" id="menu-capsules" class="sidebar-item item-grow">
-                        <span class="sidebar-item-icon"><i class="fas fa-capsules"></i></span>
-                        <span class="sidebar-item-text">Capsules</span>
-                        <span class="sidebar-item-expend"><i class="fas fa-angle-right"></i></span>
-                    </a>
-                    <div class="sidebar-subbed dp-none">
-                        <a href="index.html" id="menu-oldR" class="sidebar-item">
-                            <span class="sidebar-item-icon"><i class="fab fa-old-republic"></i></span>
-                            <span class="sidebar-item-text">Old republic</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="sidebar-row">
-                <a href="index.html" id="menu-poney" class="sidebar-item">
-                    <span class="sidebar-item-icon"><i class="fas fa-horse"></i></span>
-                    <span class="sidebar-item-text">Poney</span>
-                </a>
-            </div>
-            <div class="sidebar-row">
-                <a href="index.html" class="sidebar-item">
-                    <span class="sidebar-item-icon"><i class="fas fa-hippo"></i></span>
-                    <span class="sidebar-item-text">Hippo</span>
                 </a>
             </div>
         </div>
@@ -384,8 +344,14 @@
                                     <div class="tab-title" for="input">
                                         Input
                                     </div>
+                                    <div class="tab-title" for="input2">
+                                        Input2
+                                    </div>
                                     <div class="tab-title" for="table">
                                         Table
+                                    </div>
+                                    <div class="tab-title" for="modal">
+                                        Modal
                                     </div>
                                 </div>
                                 <div class="tabs-body">
@@ -428,6 +394,14 @@
                                             <input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter">
                                         </div>                                
                                     </div>
+                                    <div class="tab-content form-input" id="input2">
+                                        <div class="form-input-labelContainer">
+                                            <label for="testInput" class="" >Label</label>
+                                        </div>
+                                        <div class="form-input-contentContainer">
+                                            <input id="testInput" class="" type="text">
+                                        </div>
+                                    </div>
                                     <div class="tab-content" id="table">
                                         <table class="table-template">
                                             <thead>
@@ -445,45 +419,48 @@
                                                     <td>1</td>
                                                     <td>Mon super bien</td>
                                                     <td>Active</td>
-                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </td class="text-align-right">
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
                                                     <td>1</td>
                                                     <td>Mon super bien</td>
                                                     <td>Active</td>
-                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </td class="text-align-right">
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
                                                     <td>1</td>
                                                     <td>Mon super bien</td>
                                                     <td>Active</td>
-                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </td class="text-align-right">
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
                                                     <td>1</td>
                                                     <td>Mon super bien</td>
                                                     <td>Active</td>
-                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </td class="text-align-right">
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
                                                     <td>1</td>
                                                     <td>Mon super bien</td>
                                                     <td>Active</td>
-                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </tdclass="text-align-right">
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
                                                     <td>1</td>
                                                     <td>Mon super bien</td>
                                                     <td>Active</td>
-                                                    <td class="text-align-right"><a href="#" class="button">Profil</a>                                </td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
+                                    </div>
+                                    <div class="tab-content" id="modal">
+                                        <a id="OpenModal" class="button">Open</a>
                                     </div>
                                 </div>
                             </div>
@@ -528,10 +505,30 @@
     <div class="footer">
         <p>Cette application à été développé par le Pôle WEB - Univers NOZ © 2020. Pour nous contacter: <a  href="index.html">Envoyer un email</a>.</p>
     </div>
-    <div class="modal-container">
+    <div class="modal-container dp-none">
         <div class="modal">
             <div class="box">
-
+                <div class="box-body">
+                    <div class="box-title">
+                        <div class="box-title-text">
+                            Test rapide
+                        </div>
+                        <div id="closeModal" class="box-title-icon">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste non blanditiis accusantium qui temporibus molestias nam est pariatur, magni maxime voluptatum voluptate ducimus, optio vel natus! Blanditiis, magnam quibusdam!
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="box-title">
+                        testRapide
+                    </div>
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste non blanditiis accusantium qui temporibus molestias nam est pariatur, magni maxime voluptatum voluptate ducimus, optio vel natus! Blanditiis, magnam quibusdam!
+                    </div>
+                </div>
             </div>
         </div>
     </div>

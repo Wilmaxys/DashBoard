@@ -4,34 +4,45 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/test.css">
-    <script src="assets/js/preRender.js"></script>
-    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script defer src="assets/js/test.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="assets/js/test.js" ></script>
+    <style>
+        /* .boite1, .boite2 {
+            height: 300px;
+            width: 300px;
+            display: inline-block;
+        } */
+        .boite{
+            background-color: lightgreen;
+            margin: 10px;
+            height: 300px;
+            width: 300px;
+            display: inline-block;
+        }
+        .petitboite{
+            background-color: lightseagreen;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            overflow: hidden;
+            transition: all 1s linear;
+            box-shadow: 0 1px 3px rgba(0,0,0,1);
+        }
+        .petitboite:hover{
+            background-color: red;
+            color: white;
+        }
+        body {
+            background-color: lightsalmon;
+        }
+    
+    </style>
 </head>
 <body>
-
-    <div>
-        
+    <div class="boite">
+        <div id="poney" class="petitboite">sdfsdf</div>
+        <div class="petitboite">sdfsdffsd</div>
     </div>
-    
-        
-    <!-- <input type="checkbox">
-    <input type="color">
-    <input type="file">
-    <input type="hidden">
-    <input type="image">
-    <input type="month">
-    <input type="number">
-    <input type="password">
-    <input type="radio">
-    <input type="range">
-    <input type="reset">
-    <input type="search">
-    <input type="submit">
-    <input type="tel">
-    <input type="time">
-    <input type="url">
-    <input type="week">
-    -->
 </body>
 </html>
