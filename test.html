@@ -3,46 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/test.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/js/test.js" ></script>
-    <style>
-        /* .boite1, .boite2 {
-            height: 300px;
-            width: 300px;
-            display: inline-block;
-        } */
-        .boite{
-            background-color: lightgreen;
-            margin: 10px;
-            height: 300px;
-            width: 300px;
-            display: inline-block;
-        }
-        .petitboite{
-            background-color: lightseagreen;
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-            margin: 10px;
-            overflow: hidden;
-            transition: all 1s linear;
-            box-shadow: 0 1px 3px rgba(0,0,0,1);
-        }
-        .petitboite:hover{
-            background-color: red;
-            color: white;
-        }
-        body {
-            background-color: lightsalmon;
-        }
-    
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <script defer src="assets/js/jquery-3.4.1.min.js"></script>
+    <script defer src="assets/js/all.min.js"></script>
+    <script defer src="assets/js/App.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </head>
-<body>
-    <div class="boite">
-        <div id="poney" class="petitboite">sdfsdf</div>
-        <div class="petitboite">sdfsdffsd</div>
+<body class="light">
+    <div class="container-row">
+    <div class="container-2 height150 hover-red">
+        container-2
     </div>
+    <div class="container-4 height150 hover-grey">
+        container-4
+    </div>
+    <div class="container-3 height150 hover-red">
+        container-3
+    </div>
+    <div class="container-1 height150 hover-grey">
+        container-1
+    </div>
+    <div class="container-2 height150 hover-red">
+        container-2
+    </div>
+</div>
+
 </body>
 </html>

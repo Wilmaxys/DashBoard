@@ -138,5 +138,18 @@ $( document ).ready(function () {
 
     $('.sidebar').toggleClass('dp-none');
     $('.tabs-container').toggleClass('dp-none');
+
+    $('.formatCode').each(function() {
+        $(this).html($(this).html().replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
+            return '&#'+i.charCodeAt(0)+';'; 
+         }));
+        $('.formatCode').addClass("prettyprint")
+        $('.formatCode').addClass("linenums")
+        $('.formatCode').addClass("lang-html")
+      });
+
+    PR.prettyPrint();
+    
+
 })
 

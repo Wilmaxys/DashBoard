@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Démonstration template</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/image.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/App.js"></script>
+    <script defer src="assets/js/run_prettify.js"></script>
+
+</head>
+<body class="light">
+    <div class="header">
+        <div class="header-left">
+            <div class="header-title">
+                Démonstration template
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-portal">
+                <a  href="#">Portail WEB</a>
+            </div>
+            <div class="header-profil">
+                <span class="header-profil-userName">Terry Crews</span> 
+                <img class="header-profil-avatar" src="assets/img/Terry.png" alt="">
+                <div class="box dp-none" id="header-profil-owerview">
+                    <div class="box-body">
+                        <div class="box-title-medium">
+                            Informations
+                        </div>
+                        <div class="box-content">
+                            blabla
+                        </div>
+                    </div>  
+                    <div class="box-body">
+                        <div class="box-title-medium">
+                            Rôles
+                        </div>
+                        <div class="box-content">
+                            <ul class="tags">
+                                <li>Utilisateur</li>
+                                <li>Valideur</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="header-profil-owerview-param">
+                            <div class="header-profil-owerview-theme">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <div class="header-profil-owerview-button">
+                                <a href="#" class="button">Profil</a>
+                                <a href="#" class="button">Se déconnecter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sidebar dp-none">
+            <div class="sidebar-row sidebar-row-nb2">
+                <div class="sidebar-item" id="sidebar-grow-button">
+                    <span class="sidebar-item-icon"><i class="fas fa-bars"></i></span>
+                    <span class="sidebar-item-text">Réduire</span>
+                </div>
+                <div class="sidebar-item" id="sidebar-pin-button">
+                    <span class="sidebar-item-text" id="sidebar-pin-button"><i class="fas fa-thumbtack"></i></span>
+                </div>
+            </div>
+            <div class="sidebar-row">
+                <a href="#Placement" class="sidebar-item" id="menu-user">
+                    <span class="sidebar-item-icon"><i class="fas fa-users"></i></span>
+                    <span class="sidebar-item-text">Placement</span>
+                </a>
+            </div>
+            <div class="sidebar-row">
+                <a href="#" class="sidebar-item item-grow" id="menu-home">
+                    <span class="sidebar-item-icon"><i class="fas fa-home"></i></span>
+                    <span class="sidebar-item-text">Box</span>
+                    <span class="sidebar-item-expend"><i class="fas fa-angle-right"></i></span>
+                </a>
+                <div class="sidebar-subbed dp-none">
+                    <a href="#BImage" id="menu-bowling" class="sidebar-item">
+                        <span class="sidebar-item-icon"><i class="fas fa-bowling-ball"></i></span>
+                        <span class="sidebar-item-text">Box avec image</span>
+                    </a>
+                    <a href="#BSImage" id="menu-bowling" class="sidebar-item">
+                        <span class="sidebar-item-icon"><i class="fas fa-bowling-ball"></i></span>
+                        <span class="sidebar-item-text">Box sans image</span>
+                    </a>
+                    <a href="#BPortail" id="menu-bowling" class="sidebar-item">
+                        <span class="sidebar-item-icon"><i class="fas fa-bowling-ball"></i></span>
+                        <span class="sidebar-item-text">Box portail</span>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-row">
+                <a href="#Onglets" class="sidebar-item" id="menu-user">
+                    <span class="sidebar-item-icon"><i class="fas fa-users"></i></span>
+                    <span class="sidebar-item-text">Onglet</span>
+                </a>
+            </div>
+            <div class="sidebar-row">
+                <a href="#Titres" class="sidebar-item" id="menu-user">
+                    <span class="sidebar-item-icon"><i class="fas fa-users"></i></span>
+                    <span class="sidebar-item-text">Titres</span>
+                </a>
+            </div>
+            <div class="sidebar-row">
+                <a href="#" class="sidebar-item item-grow" id="menu-home">
+                    <span class="sidebar-item-icon"><i class="fas fa-home"></i></span>
+                    <span class="sidebar-item-text">Formulaire</span>
+                    <span class="sidebar-item-expend"><i class="fas fa-angle-right"></i></span>
+                </a>
+                <div class="sidebar-subbed dp-none">
+                    <a href="#TextBox" id="menu-bowling" class="sidebar-item">
+                        <span class="sidebar-item-icon"><i class="fas fa-bowling-ball"></i></span>
+                        <span class="sidebar-item-text">TextBox</span>
+                    </a>
+                    <a href="#TextArea" id="menu-bowling" class="sidebar-item">
+                        <span class="sidebar-item-icon"><i class="fas fa-bowling-ball"></i></span>
+                        <span class="sidebar-item-text">TextArea</span>
+                    </a>
+                    <a href="#CheckBox" id="menu-bowling" class="sidebar-item">
+                        <span class="sidebar-item-icon"><i class="fas fa-bowling-ball"></i></span>
+                        <span class="sidebar-item-text">CheckBox</span>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-row">
+                <a href="#Tableau" id="menu-geo" class="sidebar-item">
+                    <span class="sidebar-item-icon"><i class="fas fa-globe"></i></span>
+                    <span class="sidebar-item-text">Tableau</span>
+                </a>
+            </div>
+            <div class="sidebar-row">
+                <a href="#" id="menu-geo" class="sidebar-item">
+                    <span class="sidebar-item-icon"><i class="fas fa-globe"></i></span>
+                    <span class="sidebar-item-text">Modal</span>
+                </a>
+            </div>
+            <div class="sidebar-row">
+                <a href="#" id="menu-geo" class="sidebar-item">
+                    <span class="sidebar-item-icon"><i class="fas fa-globe"></i></span>
+                    <span class="sidebar-item-text">Menu</span>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            
+            <div class="container-row">
+                <!-- Placement -->
+                <div id="Placement" class="container-12">
+                    <div class="big-title borderBShadow">
+                        Placement
+                    </div>
+                    <div class="container-row">
+                        <div class="container-12">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-content">
+                                        <div class="box-title">
+                                            Exemple
+                                        </div>
+                                        <div class="container-row">
+                                            <div class="container-2 height150 hover-blue">
+                                                container-2
+                                            </div>
+                                            <div class="container-5 height150 hover-green">
+                                                container-5
+                                            </div>
+                                            <div class="container-3 height150 hover-blue">
+                                                container-3
+                                            </div>
+                                            <div class="container-2 height150 hover-green">
+                                                container-2
+                                            </div>
+                                        </div>
+                                        <div class="box-title">
+                                            Sources
+                                        </div>
+                                        <pre class="formatCode">
+<div class="container-row">
+    <div class="container-2 height150 hover-blue">
+        container-2
+    </div>
+    <div class="container-5 height150 hover-green">
+        container-5
+    </div>
+    <div class="container-3 height150 hover-blue">
+        container-3
+    </div>
+    <div class="container-2 height150 hover-green">
+        container-2
+    </div>
+</div>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box avec image -->
+                <div id="BImage" class="container-12">
+                    <div class="big-title borderBShadow">
+                        Box avec image
+                    </div>
+                    <div class="container-row">
+                        <div class="container-4">
+                            <div class="box">
+                                <div class="box-header crop-img">
+                                    <img src="assets/img/imgTest.jpg" alt="">
+                                </div>
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Box avec image 1
+                                    </div>
+                                    <div class="box-content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste non blanditiis accusantium qui temporibus molestias nam est pariatur, magni maxime voluptatum voluptate ducimus, optio vel natus! Blanditiis, magnam quibusdam!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<div class="box">
+    <div class="box-header crop-img">
+        <img src="assets/img/imgTest.jpg" alt="">
+    </div>
+    <div class="box-body">
+        <div class="box-title">
+            Box avec image
+        </div>
+        <div class="box-content">
+            Lorem ipsum dolor sit amet consectetur 
+        </div>
+    </div>
+</div>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box sans image -->
+                <div id="BSImage" class="container-12">
+                    <div class="big-title borderBShadow">
+                        Box sans image
+                    </div>
+                    <div class="container-row">
+                        <div class="container-4">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Box sans image
+                                    </div>
+                                    <div class="box-content">
+                                        Lorem ipsum dolor sit amet consectetur
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<div class="box">
+    <div class="box-body">
+        <div class="box-title">
+            Box sans image
+        </div>
+        <div class="box-content">
+            Lorem ipsum dolor sit amet consectetur
+        </div>
+    </div>
+</div>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box portail -->
+                <div id="BPortail" class="container-12">
+                    <div class="big-title borderBShadow">
+                        Box portail
+                    </div>
+                    <div class="container-row container-row-highlight container-row-stretch">
+                        <a href="#" class="container-2 noLink">
+                            <div class="box">
+                                <div class="box-header icon-img">
+                                    <img src="assets/img/hbk.icon.png" alt="">
+                                </div>
+                                <div class="box-body">
+                                    <div class="box-title-medium">
+                                        Have a break
+                                    </div>
+                                    <div class="box-content">
+                                        Commentaire de la box
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="container-2 noLink">
+                            <div class="box">
+                                <div class="box-header icon-img">
+                                    <img src="assets/img/tbs.icon.png" alt="">
+                                </div>
+                                <div class="box-body">
+                                    <div class="box-title-medium">
+                                        TBS
+                                    </div>
+                                    <div class="box-content">
+                                        Commentaire de la box
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container-row">
+                        <div class="container-6">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<div class="container-row container-row-highlight container-row-stretch">
+    <a href="#" class="container-2 noLink">
+        <div class="box">
+            <div class="box-header icon-img">
+                <img src="assets/img/hbk.icon.png" alt="">
+            </div>
+            <div class="box-body">
+                <div class="box-title-medium">
+                    Have a break
+                </div>
+                <div class="box-content">
+                    Commentaire de la box
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="container-2 noLink">
+        <div class="box">
+            <div class="box-header icon-img">
+                <img src="assets/img/tbs.icon.png" alt="">
+            </div>
+            <div class="box-body">
+                <div class="box-title-medium">
+                    TBS
+                </div>
+                <div class="box-content">
+                    Commentaire de la box
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-6">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Explications
+                                    </div>
+                                    <div class="box-content">
+                                        TODO: Explications
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Onglets -->
+                <div id="Onglets" class="container-12">
+                    <div class="big-title borderBShadow">
+                        Système d'onglet
+                    </div>
+                    <div class="container-row">
+                        <div class="container-6">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Système de tabulation
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="tabs-container dp-none">
+                                            <div class="tabs-header">
+                                                <div class="tab-title" for="test1">
+                                                    Tab 1
+                                                </div>
+                                                <div class="tab-title" for="test2">
+                                                    Tab 2
+                                                </div>
+                                                <div class="tab-title" for="test3">
+                                                    Tab 3
+                                                </div>
+                                            </div>
+                                            <div class="tabs-body">
+                                                <div class="tab-content" id="test1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                                </div>
+                                                <div class="tab-content" id="test2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                                </div>
+                                                <div class="tab-content" id="test3">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-6">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<div class="tabs-container dp-none">
+    <div class="tabs-header">
+        <div class="tab-title" for="test1">
+            Tab 1
+        </div>
+        <div class="tab-title" for="test2">
+            Tab 2
+        </div>
+        <div class="tab-title" for="test3">
+            Tab 3
+        </div>
+    </div>
+    <div class="tabs-body">
+        <div class="tab-content" id="test1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+        </div>
+        <div class="tab-content" id="test2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+        </div>
+        <div class="tab-content" id="test3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga obcaecati perspiciatis iusto! Doloribus ullam delectus eaque quam minima, asperiores nemo perferendis doloremque temporibus modi neque corporis fuga harum beatae!
+        </div>
+    </div>
+</div>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Titres -->
+                <div id="Titres" class="container-12">
+                    <div class="big-title borderBShadow">
+                        Titres
+                    </div>
+                    <div class="container-row">
+                        <div class="container-4">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-content">
+                                        Il existe plusieurs types de titres que vous pouvez utiliser en dehors de leurs contextes même si vous devez rester prudent.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-content">
+                                        <div class="big-title">
+                                            big-title
+                                        </div>
+                                        <div class="box-title">
+                                            box-title
+                                        </div>
+                                        <div class="box-title-medium">
+                                            box-title-medium
+                                        </div>
+                                        <div class="box-title-small">
+                                            box-title-small
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">Sources</div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<div class="big-title">
+    big-title
+</div>
+<div class="box-title">
+    box-title
+</div>
+<div class="box-title-medium">
+    box-title-medium
+</div>
+<div class="box-title-small">
+    box-title-small
+</div>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TextBox -->
+                <div id="TextBox" class="container-12">
+                    <div class="big-title borderBShadow">
+                        TextBox
+                    </div>
+                    <div class="container-row">
+                        <div class="container-4">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-content">
+                                        <div class="input-container">
+                                            <label for="testInput" class="input-textBox-label" >Label</label>
+                                            <input id="testInput" class="input-textBox" type="text">
+                                        </div>
+                                        <div class="input-container error">
+                                            <label for="testInput" class="input-textBox-label" >Label</label>
+                                            <input id="testInput" class="input-textBox" type="text">
+                                            <span class="informationMessage">Ceci est un message de test</span>
+                                        </div>
+                                        <div class="input-container success">
+                                            <label for="testInput" class="input-textBox-label" >Label</label>
+                                            <input id="testInput" class="input-textBox" type="text">
+                                            <span class="informationMessage">Ceci est un message de test</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<div class="input-container">
+    <label for="testInput" class="input-textBox-label" >Label</label>
+    <input id="testInput" class="input-textBox" type="text">
+</div>
+<div class="input-container error">
+    <label for="testInput" class="input-textBox-label" >Label</label>
+    <input id="testInput" class="input-textBox" type="text">
+    <span class="informationMessage">Ceci est un message de test</span>
+</div>
+<div class="input-container success">
+    <label for="testInput" class="input-textBox-label" >Label</label>
+    <input id="testInput" class="input-textBox" type="text">
+    <span class="informationMessage">Ceci est un message de test</span>
+</div>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TextArea -->
+                <div id="TextArea" class="container-12">
+                    <div class="big-title borderBShadow">
+                        TextArea
+                    </div>
+                    <div class="container-row">
+                        <div class="container-4">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-content">
+                                        <div class="input-container">
+                                            <label for="testInput" class="input-textBox-label" >Label</label>
+                                            <textarea id="testInput" class="input-textBox"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<div class="input-container">
+    <label for="testInput" class="input-textBox-label" >Label</label>
+    <textarea id="testInput" class="input-textBox"></textarea>
+</div>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DatePicker -->
+                <div id="DatePicker" class="container-12">
+                    <div class="big-title borderBShadow">
+                        DatePicker
+                    </div>
+                    <div class="container-row">
+                        <div class="container-4">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-content">
+                                        <div class="input-container">
+                                            <label for="testInput" class="input-date-label" >Label</label>
+                                            <input id="testInput" class="input-date" type="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<div class="input-container">
+    <label for="testInput" class="input-date-label" >Label</label>
+    <input id="testInput" class="input-date" type="date">
+</div>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Select -->
+                <div id="Select" class="container-12">
+                    <div class="big-title borderBShadow">
+                        Select
+                    </div>
+                    <div class="container-row">
+                        <div class="container-4">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-content">
+                                        <div class="input-container">
+                                            <label class="input-select-label" for="pet-select">Choose a pet</label>
+                                            <select class="input-select" id="pet-select">
+                                                <option value="dog">Dog</option>
+                                                <option value="cat">Cat</option>
+                                                <option value="hamster">Hamster</option>
+                                                <option value="parrot">Parrot</option>
+                                                <option value="spider">Spider</option>
+                                                <option value="goldfish">Goldfish</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<div class="input-container">
+    <label class="input-select-label" for="pet-select">Choose a pet</label>
+    <select class="input-select" id="pet-select">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+    </select>
+</div>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div id="Button" class="container-12">
+                    <div class="big-title borderBShadow">
+                        Button
+                    </div>
+                    <div class="container-row">
+                        <div class="container-4">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-content">
+                                        <div class="box-title-medium">
+                                            Button
+                                        </div>
+                                        <div class="input-container">
+                                            <input class="button" type="button" value="Test">
+                                        </div>
+                                        <div class="box-title-medium">
+                                            Lien
+                                        </div>
+                                        <a href="#" class="button">Test</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<div class="input-container">
+    <input class="button" type="button" value="Test">
+</div>
+<a href="#" class="button">Profil</a>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CheckBox -->
+                <div id="CheckBox" class="container-12">
+                    <div class="big-title borderBShadow">
+                        CheckBox
+                    </div>
+                    <div class="container-row">
+                        <div class="container-4">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-content">
+                                        <input type="checkbox" id="test" name="test" class="checkbox-custom" value="1"><label for="test" class="required">Test</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<input type="checkbox" id="test" name="test" class="checkbox-custom" value="1"><label for="test" class="required">Test</label>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tableau -->
+                <div id="Tableau" class="container-12">
+                    <div class="big-title borderBShadow">
+                        Tableau
+                    </div>
+                    <div class="container-row">
+                        <div class="container-12">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-content">
+                                        <table class="table-template">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>ID</th>
+                                                    <th>Name</th>
+                                                    <th>Status</th>
+                                                    <th class="text-align-right">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+                                                    <td>1</td>
+                                                    <td>Mon super bien</td>
+                                                    <td>Active</td>
+                                                    <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-12">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="box-title">
+                                        Sources
+                                    </div>
+                                    <div class="box-content">
+                                        <pre class="formatCode">
+<table class="table-template">
+    <thead>
+        <tr>
+            <th></th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th class="text-align-right">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+            <td>1</td>
+            <td>Mon super bien</td>
+            <td>Active</td>
+            <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+            <td>1</td>
+            <td>Mon super bien</td>
+            <td>Active</td>
+            <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+            <td>1</td>
+            <td>Mon super bien</td>
+            <td>Active</td>
+            <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+            <td>1</td>
+            <td>Mon super bien</td>
+            <td>Active</td>
+            <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+            <td>1</td>
+            <td>Mon super bien</td>
+            <td>Active</td>
+            <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="checkbox-custom" name="subscribe" value="newsletter"></td>
+            <td>1</td>
+            <td>Mon super bien</td>
+            <td>Active</td>
+            <td class="text-align-right"><a href="#" class="button">Profil</a></td>
+        </tr>
+    </tbody>
+</table>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Cette application à été développé par le Pôle WEB - Univers NOZ © 2020. Pour nous contacter: <a  href="#">Envoyer un email</a>.</p>
+    </div>
+</body>
+</html>
