@@ -1,6 +1,6 @@
 $( document ).ready(function () {
 
-    $('#closeModal').click(function () {
+    $('#CloseModal').click(function () {
         $(this).parents('.modal-container').toggleClass("dp-none");
     });
 
